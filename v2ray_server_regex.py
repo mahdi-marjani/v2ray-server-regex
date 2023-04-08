@@ -39,7 +39,7 @@ ss_servers     = set(ss_servers)
 current_time = datetime.datetime.now()
 formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
-with open('output.txt', 'w') as file:
+with open('output.txt', 'w' , encoding='utf-8') as file:
     file.write(f'(time update : {formatted_time})' + '\n\n')
     file.write('vmess servers:' + '\n\n')
     for elem in vmess_servers:
